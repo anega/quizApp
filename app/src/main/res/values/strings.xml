@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Quiz</string>
+    <string name="quiz_name">Super Duper quiz</string>
+    <string name="subtitle">Check your knowledge of killer whales</string>
+    <string name="name_question">First of all please enter your name</string>
+    <string name="name_question_hint">Your name</string>
+    <string name="q_2">Second thing you need to know is the name of the most freedom loving killer whale</string>
+    <string name="q_2_hint">Whale name</string>
+    <string name="q_3">Choose the image with a killer whale</string>
 </resources>
