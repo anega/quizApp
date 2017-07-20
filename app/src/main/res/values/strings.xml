@@ -7,6 +7,8 @@
     <string name="q_2">Second thing you need to know is the name of the most freedom loving killer whale</string>
     <string name="q_2_hint">Whale name</string>
     <string name="q_3">Choose the image with a killer whale</string>
+    <string name="q_3_whale">killer whale</string>
+    <string name="q_3_chess">chess board</string>
     <string name="q_4">What colors are the main killer whale colors?</string>
     <string name="q_4_a1">Black</string>
     <string name="q_4_a2">Green</string>
