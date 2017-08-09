@@ -7,12 +7,15 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:text="@string/quiz_name" />
 
         <TextView
@@ -22,6 +25,7 @@
             android:text="@string/subtitle" />
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name_question" />
@@ -32,6 +36,7 @@
             android:hint="@string/name_question_hint" />
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_2" />
@@ -42,6 +47,7 @@
             android:hint="@string/q_2_hint" />
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_3" />
@@ -88,6 +94,7 @@
         </LinearLayout>
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_4" />
