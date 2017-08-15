@@ -7,6 +7,8 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:orientation="vertical"
         android:padding="8dp">
 
@@ -62,6 +64,7 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/whale_pic"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -104,21 +107,19 @@
             android:text="@string/q_4" />
 
         <CheckBox
+            android:id="@+id/color_black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_4_a1" />
 
         <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/q_4_a2" />
-
-        <CheckBox
+            android:id="@+id/color_sky"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_4_a3" />
 
         <CheckBox
+            android:id="@+id/color_white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_4_a4" />
@@ -126,8 +127,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/submit_btn"
-            android:onClick="submitQuiz"/>
+            android:onClick="submitQuiz"
+            android:text="@string/submit_btn" />
 
     </LinearLayout>
 
