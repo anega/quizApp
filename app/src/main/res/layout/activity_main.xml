@@ -11,12 +11,12 @@
         android:descendantFocusability="beforeDescendants"
         android:focusableInTouchMode="true"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:padding="@dimen/padding_main_layout_8">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/margin_all_title_8"
             android:gravity="center"
             android:text="@string/quiz_name"
             android:textColor="@color/black"
@@ -36,7 +36,7 @@
             android:text="@string/name_question" />
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name_question_hint" />
@@ -48,7 +48,7 @@
             android:text="@string/q_2" />
 
         <EditText
-            android:id="@+id/whale_name"
+            android:id="@+id/et_whale_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/q_2_hint" />
@@ -65,7 +65,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/whale_pic"
+                android:id="@+id/rb_whale_pic"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -79,7 +79,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="0dp"
@@ -108,19 +109,19 @@
             android:text="@string/q_4" />
 
         <CheckBox
-            android:id="@+id/color_black"
+            android:id="@+id/cb_color_black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_4_a1" />
 
         <CheckBox
-            android:id="@+id/color_sky"
+            android:id="@+id/cb_color_sky"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_4_a3" />
 
         <CheckBox
-            android:id="@+id/color_white"
+            android:id="@+id/cb_color_white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q_4_a4" />

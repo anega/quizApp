@@ -47,25 +47,25 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public boolean formIsValid() {
-        EditText nameContents = (EditText) findViewById(R.id.username);
+    public boolean validateForm() {
+        EditText nameContents = (EditText) findViewById(R.id.et_username);
         String nameStr = nameContents.getText().toString().trim();
         Boolean validName = !TextUtils.isEmpty(nameStr);
 
-        EditText whaleNameContents = (EditText) findViewById(R.id.whale_name);
+        EditText whaleNameContents = (EditText) findViewById(R.id.et_whale_name);
         String whaleNameStr = whaleNameContents.getText().toString().trim();
         Boolean validWhaleName = whaleNameStr.equals("Willy");
 
-        RadioButton whalePic = (RadioButton) findViewById(R.id.whale_pic);
+        RadioButton whalePic = (RadioButton) findViewById(R.id.rb_whale_pic);
         Boolean validWhalePic = whalePic.isChecked();
 
-        CheckBox whaleBlack = (CheckBox) findViewById(R.id.color_black);
+        CheckBox whaleBlack = (CheckBox) findViewById(R.id.cb_color_black);
         Boolean validWhaleBlack = whaleBlack.isChecked();
 
-        CheckBox whaleSky = (CheckBox) findViewById(R.id.color_sky);
+        CheckBox whaleSky = (CheckBox) findViewById(R.id.cb_color_sky);
         Boolean validWhaleSky = whaleSky.isChecked();
 
-        CheckBox whaleWhite = (CheckBox) findViewById(R.id.color_white);
+        CheckBox whaleWhite = (CheckBox) findViewById(R.id.cb_color_white);
         Boolean validWhaleWhite = whaleWhite.isChecked();
 
         return (validName && validWhaleName && validWhalePic && validWhaleBlack && !validWhaleSky && validWhaleWhite);
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitQuiz(View view) {
         String message = "";
-        if (formIsValid()) {
+        if (validateForm()) {
             message = getString(R.string.passed);
         } else {
             message = getString(R.string.failed);
