@@ -2,4 +2,6 @@
 <resources>
     <dimen name="padding_main_layout_8">8dp</dimen>
     <dimen name="margin_all_title_8">8dp</dimen>
+    <dimen name="size_main_title_24">24sp</dimen>
+    <dimen name="size_all_0">0dp</dimen>
 </resources>

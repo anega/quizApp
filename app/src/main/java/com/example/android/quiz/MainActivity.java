@@ -15,11 +15,36 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Declare all variables
+    EditText nameContents;
+    String nameStr;
+    Boolean isValidName;
+    EditText whaleNameContents;
+    String whaleNameStr;
+    Boolean isValidWhaleName;
+    RadioButton whalePic;
+    Boolean isValidWhalePic;
+    CheckBox whaleBlack;
+    Boolean isValidWhaleBlack;
+    CheckBox whaleSky;
+    Boolean isValidWhaleSky;
+    CheckBox whaleWhite;
+    Boolean isValidWhaleWhite;
+    String message;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupUI(findViewById(R.id.parent));
+
+        // Get views, will need for validation
+        nameContents = (EditText) findViewById(R.id.et_username);
+        whaleNameContents = (EditText) findViewById(R.id.et_whale_name);
+        whalePic = (RadioButton) findViewById(R.id.rb_whale_pic);
+        whaleBlack = (CheckBox) findViewById(R.id.cb_color_black);
+        whaleSky = (CheckBox) findViewById(R.id.cb_color_sky);
+        whaleWhite = (CheckBox) findViewById(R.id.cb_color_white);
     }
 
     public static void hideSoftKeyboard(Activity activity) {
@@ -47,40 +72,36 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Validate form(check if all the answers are right)
+     * @return true if all answers are right
+     */
     public boolean validateForm() {
-        EditText nameContents = (EditText) findViewById(R.id.et_username);
-        String nameStr = nameContents.getText().toString().trim();
-        Boolean validName = !TextUtils.isEmpty(nameStr);
+        nameStr = nameContents.getText().toString().trim();
+        isValidName = !TextUtils.isEmpty(nameStr);
+        whaleNameStr = whaleNameContents.getText().toString().trim();
+        isValidWhaleName = whaleNameStr.equals("Willy");
+        isValidWhalePic = whalePic.isChecked();
+        isValidWhaleBlack = whaleBlack.isChecked();
+        isValidWhaleSky = whaleSky.isChecked();
+        isValidWhaleWhite = whaleWhite.isChecked();
 
-        EditText whaleNameContents = (EditText) findViewById(R.id.et_whale_name);
-        String whaleNameStr = whaleNameContents.getText().toString().trim();
-        Boolean validWhaleName = whaleNameStr.equals("Willy");
-
-        RadioButton whalePic = (RadioButton) findViewById(R.id.rb_whale_pic);
-        Boolean validWhalePic = whalePic.isChecked();
-
-        CheckBox whaleBlack = (CheckBox) findViewById(R.id.cb_color_black);
-        Boolean validWhaleBlack = whaleBlack.isChecked();
-
-        CheckBox whaleSky = (CheckBox) findViewById(R.id.cb_color_sky);
-        Boolean validWhaleSky = whaleSky.isChecked();
-
-        CheckBox whaleWhite = (CheckBox) findViewById(R.id.cb_color_white);
-        Boolean validWhaleWhite = whaleWhite.isChecked();
-
-        return (validName && validWhaleName && validWhalePic && validWhaleBlack && !validWhaleSky && validWhaleWhite);
+        return (isValidName && isValidWhaleName && isValidWhalePic && isValidWhaleBlack && !isValidWhaleSky && isValidWhaleWhite);
     }
 
+    /**
+     * Show toast with proper message
+     * @param message string, will be shown to user
+     */
     public void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 
     public void submitQuiz(View view) {
-        String message = "";
         if (validateForm()) {
-            message = getString(R.string.passed);
+            message = getString(R.string.user_res_passed);
         } else {
-            message = getString(R.string.failed);
+            message = getString(R.string.user_res_failed);
         }
 
         showToast(message);

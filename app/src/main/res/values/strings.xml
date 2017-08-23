@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">Quiz</string>
     <string name="quiz_name">Super Duper quiz</string>
-    <string name="subtitle">Check your knowledge of killer whales</string>
+    <string name="quiz_subtitle">Check your knowledge of killer whales</string>
     <string name="name_question">First of all please enter your name</string>
     <string name="name_question_hint">Your name</string>
-    <string name="q_2">Second thing you need to know is the name of the most freedom loving killer whale</string>
-    <string name="q_2_hint">Whale name</string>
-    <string name="q_3">Choose the image with a killer whale</string>
-    <string name="q_3_whale">killer whale</string>
-    <string name="q_3_chess">chess board</string>
-    <string name="q_4">What colors are the main killer whale colors?</string>
-    <string name="q_4_a1">Black</string>
-    <string name="q_4_a3">Color of the sky</string>
-    <string name="q_4_a4">White</string>
+    <string name="question_2">Second thing you need to know is the name of the most freedom loving killer whale</string>
+    <string name="question_2_hint">Whale name</string>
+    <string name="question_3">Choose the image with a killer whale</string>
+    <string name="question_3_whale">killer whale</string>
+    <string name="question_3_chess">chess board</string>
+    <string name="question_4">What colors are the main killer whale colors?</string>
+    <string name="question_4_a1">Black</string>
+    <string name="question_4_a3">Color of the sky</string>
+    <string name="question_4_a4">White</string>
     <string name="submit_btn">Submit</string>
-    <string name="passed">You\'ve passed! Congratulations</string>
-    <string name="failed">Sorry! Think and google.</string>
+    <string name="user_res_passed">You\'ve passed! Congratulations</string>
+    <string name="user_res_failed">Sorry! Think and google.</string>
 </resources>

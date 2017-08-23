@@ -19,15 +19,15 @@
             android:layout_marginBottom="@dimen/margin_all_title_8"
             android:gravity="center"
             android:text="@string/quiz_name"
-            android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_main_title_24"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/subtitle" />
+            android:text="@string/quiz_subtitle" />
 
         <TextView
             style="@style/QuestionStyle"
@@ -45,19 +45,19 @@
             style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q_2" />
+            android:text="@string/question_2" />
 
         <EditText
             android:id="@+id/et_whale_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/q_2_hint" />
+            android:hint="@string/question_2_hint" />
 
         <TextView
             style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q_3" />
+            android:text="@string/question_3" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -66,12 +66,12 @@
 
             <RadioButton
                 android:id="@+id/rb_whale_pic"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/size_all_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <RadioButton
-                android:layout_width="0dp"
+                android:layout_width="@dimen/size_all_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
@@ -83,20 +83,20 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/size_all_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:contentDescription="@string/q_3_whale"
+                android:contentDescription="@string/question_3_whale"
                 android:scaleType="centerCrop"
                 android:src="@drawable/whales" />
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/size_all_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:contentDescription="@string/q_3_chess"
+                android:contentDescription="@string/question_3_chess"
                 android:scaleType="centerCrop"
                 android:src="@drawable/chess" />
 
@@ -106,25 +106,25 @@
             style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q_4" />
+            android:text="@string/question_4" />
 
         <CheckBox
             android:id="@+id/cb_color_black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q_4_a1" />
+            android:text="@string/question_4_a1" />
 
         <CheckBox
             android:id="@+id/cb_color_sky"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q_4_a3" />
+            android:text="@string/question_4_a3" />
 
         <CheckBox
             android:id="@+id/cb_color_white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q_4_a4" />
+            android:text="@string/question_4_a4" />
 
         <Button
             android:layout_width="wrap_content"
